@@ -1,0 +1,397 @@
+/* ALL */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&family=Playfair+Display&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+q {
+  font-family: 'Playfair Display', sans-serif;
+}
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 18px;
+}
+h4 {
+  font-size: 16px;
+  /* font-weight: normal; */
+}
+q {
+  font-size: 18px;
+}
+p {
+  font-weight: 300;
+  font-size: 16px;
+}
+hr {
+  margin: 0 250px;
+}
+
+/* header */
+header {
+  transition: all 0.2s;
+}
+header.scroll {
+  height: max-content;
+  padding: 10px auto;
+  border: 1px solid black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: rgb(220, 197, 197);
+}
+li,
+a,
+button {
+  font-weight: normal;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+}
+.logo img {
+  max-width: 200px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  margin: 2px 20px;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+.nav-links a {
+  text-decoration: none;
+  color: black;
+}
+.nav-links li {
+  list-style: none;
+}
+nav li a {
+  transition: all 0.3s ease 0s;
+}
+nav li a:hover {
+  color: #80b1b3;
+}
+header button {
+  padding: 8px 25px;
+  background-color: #ffddd2;
+  border: none;
+  border-radius: 50px;
+  font-weight: 200;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+/* all buttons */
+button {
+  padding: 15px 50px;
+  background-color: #ffddd2;
+  border: none;
+  border-radius: 50px;
+  font-weight: 200;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+/* hover */
+button:hover {
+  transition: all 0.8s ease 0s;
+  background-color: #ceafa5;
+}
+.produk:hover {
+  transition: all 0.8s ease 0s;
+  background-color: #f3ded7;
+}
+
+/* slider */
+.lustrasi-container {
+  width: 60%;
+  margin: auto;
+  border: 5px solid black;
+}
+.ilustrasi-slide {
+  display: flex;
+  width: 100%;
+}
+
+/* HOME */
+.home {
+  margin: 50px 30px 50px 30px;
+}
+.thumbnail.satu {
+  flex: 3;
+  margin: auto;
+}
+.thumbnail img {
+  width: 100%;
+}
+.thumbnail.dua {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+}
+.thumbnail.dua h1 {
+  margin-bottom: 10px;
+}
+
+/* about */
+.about {
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+.container-about-1 {
+  text-align: center;
+  padding: 20px;
+}
+.container-about-1 h2 {
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+.quote {
+  margin: 30px;
+}
+.bookNow {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* services */
+.services {
+  margin: 30px 50px;
+}
+.services h2 {
+  text-align: center;
+  margin: 30px;
+  padding-top: 30px;
+}
+.card {
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 10px auto;
+  flex: 1;
+  min-width: auto;
+}
+
+.card.produk {
+  border: none;
+  padding: 10px;
+  text-align: center;
+  margin: 15px;
+  max-width: none;
+}
+.card .header {
+  padding-bottom: 20px;
+}
+.card .header h3 {
+  padding-bottom: 10px;
+}
+
+/* artikel */
+.articles {
+  margin: 30px 50px;
+}
+.articleOne {
+  padding: 20px;
+  background-color: #80b1b3;
+  transition: box-shadow 0.3s;
+}
+.articleOne h3 {
+  margin-bottom: 20px;
+}
+.bagian {
+  margin: 10px;
+}
+.biodata {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #ffddd2;
+  padding: 15px;
+}
+.cardBiodata {
+  transition: box-shadow 0.3s;
+  border: 1px solid;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 10px auto;
+  flex: 1;
+  max-width: fit-content;
+}
+.cardBiodata:hover,
+.articleOne:hover {
+  box-shadow: 0 0 20px rgba(33, 33, 33, 0.5);
+  border: 1.5px solid;
+}
+
+/* contact */
+.contact {
+  margin: 30px 30px;
+}
+.layanan {
+  margin: 30px;
+  padding: 10px;
+  text-align: left;
+}
+.layanan h3 {
+  margin-bottom: 10px;
+}
+iframe {
+  border-radius: 10px;
+}
+.google-maps {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+}
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  border: none;
+}
+
+/* footer */
+footer {
+  padding: 20px;
+  background-color: rgba(255, 221, 210, 1);
+  text-align: center;
+  font-weight: 300;
+  margin-top: 30px;
+}
+
+/* dropdown */
+.tombol-menu {
+  position: absolute;
+  top: 1.7rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+.tombol-menu .garis {
+  height: 3px;
+  background-color: #3f72af;
+}
+
+/* burger bar */
+.burger {
+  display: none;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px;
+}
+
+/* respnsive */
+
+/* mobile small 320px */
+@media screen and (max-width: 320px) {
+  .card .content {
+    display: none;
+  }
+}
+
+/* mobile  medium, large, dan tablet*/
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .layanan {
+    text-align: center;
+  }
+  nav button {
+    display: none;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    top: 8vh;
+    background-color: rgb(220, 197, 197);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+/* desktop */
+@media screen and (max-width: 1024px) {
+  .logo img {
+    max-width: 100px;
+  }
+  .nav-links {
+    width: 60%;
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 769px) {
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  .thumbnail.dua {
+    justify-content: center;
+    text-align: right;
+  }
+  .thumbnail.dua h1 {
+    font-size: 48px;
+  }
+  .container-about-1 p {
+    padding: 0 200px;
+  }
+  .container.articles,
+  .container.contact {
+    justify-content: space-around;
+  }
+  .maps {
+    width: 300px;
+  }
+}
